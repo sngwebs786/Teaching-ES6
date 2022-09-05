@@ -85,8 +85,7 @@
 // //////////////////////////////// Template Literals
 // let name = "Nashra"
 // let para = "Hello I am a MERN Stack Developer";
-// let para2 = `Hello I am a 
-
+// let para2 = `Hello I am a
 
 //  MERN Stack Developer`;
 
@@ -95,11 +94,9 @@
 // console.log(para2);
 // console.log(para3);
 
-
 // //////////////////////////////// Ternary Operators
 
 // let age = 18;
-
 
 // if(age>=18){
 //     console.log("Yes")
@@ -108,10 +105,7 @@
 //     console.log("No")
 // }
 
-
 // console.log((age>=18) ? ++age : --age)
-
-
 
 // //////////////////////////////// Spread Operators (...)
 
@@ -120,21 +114,96 @@
 // const newArray = [...myArray,"E","F","G"]
 // console.log("new: ", newArray)
 
-
 // //////////////////////////////// Arrow Functions
 
-function func1(){
-    console.log("This is function 1")
-}
+// function func1(){
+//     console.log("This is function 1")
+// }
 
-func1()
+// func1()
+
+// fat arrow
+// let func2 = () => console.log("This is function 2")
+
+// func2()
+
+// 1. Map
+// 2. forEach
+
+// 3. find
+// 4. filter
+
+// 5. some
+
+// const myArray=["A","B","C","D","E"]
+// ()=> Callback
+
+// MAP
+
+// myArray.map((val,index)=>{
+//     console.log(val,index)
+// })
+
+// FOREACH
+
+// myArray.forEach((a,b)=>{
+// console.log(a,b)
+// })
+
+// const myValue = myArray.map((info,index)=>{
+//     return info
+// })
+
+// console.log(myValue)
+
+// const myValue = myArray.forEach((info,index)=>{
+//     return info
+// })
+
+// console.log(myValue)
 
 
-// fat arrow 
-let func2 = () => console.log("This is function 2")
+const myObj = [
+  {
+    id: 2,
+    name: "Aleena",
+  },
+  {
+    id: 1,
+    name: "Hamza",
+  },
+  {
+    id: 6,
+    name: "Nashra",
+  },
+];
+
+// myObj.map((info)=>{
+// console.log(info.name,info.id)
+// })
+
+// FIND
+// returns only 1 Object 
+
+// let output = myObj.find((a)=>{
+//     return a.id < 5
+// })
 
 
-func2()
+// FILTER
+// multiple objects return 
+
+// let output = myObj.filter((a)=>{
+//     return a.id < 5
+// })
 
 
+// SOME 
+// return boolean 
 
+// let output = myObj.some((a)=>{
+//     return a.id > 15
+// })
+
+
+// console.log(output)
